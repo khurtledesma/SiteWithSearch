@@ -1,11 +1,10 @@
 $(function() {
     var APIKEY = "hhT2L1pDmHQXlzkxCTAz6S2mfQlHmq8Z"
-    $('#userSubmit').click(function (e) { 
+    $('div#userSubmit').click(function (e) { 
         e.preventDefault() // stops the page from reloading 
         $('#results').empty(); //empties page after submitting, allows you to search multiple times 
         var userInput = $('#userInput').val(); //gathers search input 
-        var userAmount = $('#userAmount').val();
-
+        var userAmount = 5  // $('#userAmount').val();
         $.ajax ({
             url:'https://api.giphy.com/v1/gifs/search?q='+userInput+'&api_key='+APIKEY+'&limit='+userAmount+'', //url of the API
             dataType: 'json', //dataType
