@@ -32,6 +32,12 @@ h1 {
     margin-right: auto;
 }
 
+#footer {
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     
