@@ -1,3 +1,5 @@
+/*Variables */
+/*Selectors*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -8,7 +10,8 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: white; }
 
 h2 {
   text-align: center;
@@ -16,7 +19,23 @@ h2 {
   opacity: 40%; }
 
 nav {
-  font-size: 1.5em; }
+  font-size: 1.15em; }
+
+/* ID's */
+#results {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+  #results img {
+    height: 275px;
+    width: 25%;
+    margin-top: 20px; }
+
+/* Classes */
+.logo {
+  width: 150px;
+  height: auto; }
 
 .twentyPxMarginTandB {
   margin-top: 20px;
@@ -25,18 +44,14 @@ nav {
 .pointer-cursor {
   cursor: pointer; }
 
-#results {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .logo {
+    width: 75px;
+    height: auto; }
 
-#results img {
-  height: 275px;
-  width: 25%;
-  margin-top: 20px; }
-
-.logo {
-  width: 150px;
-  height: auto; }
+  #results img {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=styles.css.map */
