@@ -15,14 +15,15 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syncopate">
 </head>
 
 <body>
 
   <header>
-    
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="top">
-    <img class="navbar-brand logo" href="#"src="img/PwrByGif.gif">
+      <img class="navbar-brand logo" href="#" src="img/PwrByGif.gif">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,12 +46,19 @@
 
   <h1>GIPHY Search</h1>
   <div class="container" id="search">
-    <div class="input-group md-form form-sm form-2 pl-0 pointer-cursor twentyPxMarginTandB col-xs-6 col-xs-push-3 col-md-12" id="userSearch">
-      <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Enter search here " aria-label="Search" id="userInput">
-      <div class="input-group-append" id="userSubmit">
-        <span class="input-group-text lime lighten-2" ><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+      <div
+        class="input-group md-form form-sm form-2 pl-0 pointer-cursor twentyPxMarginTandB col-xs-6 col-xs-push-3 col-md-12"
+        id="userSearch">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Enter Search Here"
+          aria-label="Search" id="userInput">
+        <div class="input-group-append">
+          <input style="width:100px;" class="form-control lime-border" type="text"
+            placeholder="# of GIFS" aria-label="Search" id="userAmount"></div>
+        <div class="input-group-append">
+          <button id="userSubmit" class="input-group-text lime lighten-2"><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></button>
+        </div>
       </div>
-    </div>
   </div>
 
   <div id="results">

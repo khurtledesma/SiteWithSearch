@@ -11,7 +11,8 @@ body {
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: white; }
+  color: white;
+  font-family: 'Syncopate', serif; }
 
 h2 {
   text-align: center;
